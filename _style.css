@@ -1,0 +1,22 @@
+/* Tenure's own palette, the same numbers the app draws with:
+   paper #FBF9E5, ink #1A201B, accent #1E6723, and their dark pairs. */
+:root { --ink:#1A201B; --soft:#53594F; --rule:#C9C7BA; --ground:#FBF9E5;
+        --surface:#FFFDF3; --accent:#1E6723; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#E9EBE4; --soft:#A8AFA5; --rule:#2E3630; --ground:#0F1512;
+          --surface:#151C17; --accent:#7EC883; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--ground); color:var(--ink);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+main { max-width:39rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.01em; }
+h1::after { content:""; display:block; height:3px; background:var(--ink); margin-top:.7rem; }
+h2 { font-size:1.1rem; margin:2.4rem 0 .6rem; }
+.meta { color:var(--soft); font-size:.9rem; margin:0 0 2.2rem; }
+a { color:var(--accent); }
+hr { border:0; border-top:1px solid var(--rule); margin:2.5rem 0; }
+ul { padding-left:1.15rem; } li { margin:.35rem 0; }
+.note { background:var(--surface); border:1px solid var(--rule); padding:1rem 1.1rem; }
+code { font-size:.9em; }
+footer { color:var(--soft); font-size:.85rem; margin-top:3rem; }
